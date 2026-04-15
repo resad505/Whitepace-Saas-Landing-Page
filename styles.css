@@ -58,26 +58,6 @@ nav {
     width: 988.5px;
 }
 
-.nav__links__products {
-    width: 116px;
-    height: 24px;
-}
-
-.nav__links__solutions {
-    width: 118px;
-    height: 24px;
-}
-
-.nav__links__resources {
-    width: 127px;
-    height: 24px;
-}
-
-.nav__links__pricing {
-    width: 97px;
-    height: 24px;
-}
-
 .nav__buttons {
     display: flex;
     justify-content: center;
@@ -96,6 +76,7 @@ nav {
     color: #043873;
     width: 126px;
     height: 60px;
+    border: none;
 }
 
 .nav__buttons__try {
@@ -104,6 +85,13 @@ nav {
     border-radius: 8px;
     background-color: #4F9CF9;
     color: white;
+    border: none;
+    gap: 10px;
+    padding: 10px;
+}
+
+.nav__buttons a {
+    text-decoration: none;
 }
 
 .logo {
@@ -133,10 +121,6 @@ nav {
     margin: 0 auto;
     padding: 24px 16px;
     gap: 10px;
-}
-
-.hero__content {
-    width: 50%;
     color: white;
 }
 
@@ -145,28 +129,27 @@ nav {
 
 }
 
-.hero__bg {
+.hero__bg,
+.extension__bg {
     background-color: #043873;
 }
 
+<<<<<<< HEAD
 .hero__title {
+=======
+.hero__image__img {
+    width: 100%;
+    height: 100%;
+}
+
+.title {
+>>>>>>> febdfdea50c9720000a3b680ef6d56bdec798310
     font-size: 64px;
     font-weight: 700;
 }
 
-.hero__description {
-    margin-top: 10px;
-    font-size: 18px;
-    font-weight: 400;
-}
-
 .hero__button {
-    margin-top: 10px;
-    width: 30%;
-    height: 60px;
-    border-radius: 8px;
-    background-color: #4F9CF9;
-    color: white;
+    padding: 10px;
 }
 
 .project__bg {
@@ -177,7 +160,10 @@ nav {
     background-repeat: no-repeat;
 }
 
-.project {
+.project,
+.work,
+.extension,
+.hero {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -187,28 +173,19 @@ nav {
     gap: 10px;
 }
 
-.project__content__writing {
-    width: 50%;
-    color: black;
-}
-
-.project__image {
+.image {
     width: 50%;
 }
 
-.project__image__img {
+.image__img {
     width: 100%;
     height: 100%;
-}
-
-.project__title {
-    font-size: 72px;
-    font-weight: 700;
 }
 
 .project__title__word {
     position: relative;
     display: inline-block;
+    z-index: 1;
 }
 
 .project__title__img {
@@ -216,10 +193,50 @@ nav {
     bottom: -12px;
     left: 0;
     width: 100%;
+    z-index: -1;
 }
 
-.project__description {
+.work__bg {
+    background-color: white;
+}
+
+.work__title__word {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+
+.work__title__img {
+    position: absolute;
+    bottom: -1px;
+    left: 5%;
+    width: 100%;
+    z-index: -1;
+}
+
+.description {
     margin-top: 10px;
     font-size: 18px;
-    font-weight: 400;
+}
+
+.button {
+    margin-top: 50px;
+    width: 30%;
+    height: 60px;
+    border-radius: 8px;
+    border: none;
+    background-color: #4F9CF9;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.extension {
+    color: white;
+}
+
+.content {
+    width: 50%;
 }
